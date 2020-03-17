@@ -6,18 +6,17 @@ import uniqid from 'uniqid';
 import Ingredient from '../ingredient/Ingredient.component';
 
 const ingredientObj = [
-    { name: 'Cheese', id: uniqid() },
-    { name: 'Olive', id: uniqid() },
-    { name: 'Tomato', id: uniqid() },
-    { name: 'Pepper', id: uniqid() },
-    { name: 'Mushrooms', id: uniqid() },
-    { name: 'Smoked meat', id: uniqid() },
+    { id: uniqid(), name: 'olive', imgUrl: require('../../assets/ingredients/olive.png') },
+    { id: uniqid(), name: 'tomato', imgUrl: require('../../assets/ingredients/tomato.png') },
+    { id: uniqid(), name: 'greens', imgUrl: require('../../assets/ingredients/greens.png') },
+    { id: uniqid(), name: 'mashrooms', imgUrl: require('../../assets/ingredients/mashrooms.png') },
+    { id: uniqid(), name: 'sausage', imgUrl: require('../../assets/ingredients/sausage.png') },
 ];
 
 const CattingBoard = () => {
     return (
         <div className="cutting-board">
-            {ingredientObj.map(ingredient => (
+            {ingredientObj.map((ingredient) => (
                 <Ingredient key={ingredient.id} ingredient={ingredient} />
             ))}
         </div>

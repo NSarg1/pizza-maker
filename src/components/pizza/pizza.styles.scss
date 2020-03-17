@@ -1,9 +1,35 @@
 .pizza {
-    background: url(../../assets/pizza.png);
+    position: relative;
+    background: url(../../assets/pizza/pizza.png);
     background-position: center;
     background-size: cover;
     height: 50rem;
-    width: 51rem;
-    box-shadow: 1.1rem 0.5rem 5.6rem 0.5rem rgba(0, 0, 0, 0.75);
+    width: 50rem;
+    box-shadow: 3rem 0 5.6rem 0.5rem rgba(0, 0, 0, 0.75);
     border-radius: 50%;
+
+    &__ingredient {
+        @include absoluteCenter;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: 100%;
+        border-radius: 50%;
+    }
+
+    &__tomato {
+        z-index: 50;
+    }
+    &__olive {
+        z-index: 40;
+    }
+    &__greens {
+        z-index: 30;
+    }
+    &__mashrooms {
+        z-index: 20;
+    }
+    &__sausage {
+        z-index: 10;
+    }
 }

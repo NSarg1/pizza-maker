@@ -1,11 +1,27 @@
 import React from 'react';
+import { useDrag } from 'react-dnd';
 
-const Ingredient = props => {
-    const { ingredient } = props;
+import { ItemTypes } from '../../react-dnd/ItemTypes';
+
+const Ingredient = ({ ingredient }) => {
+    const { imgUrl } = ingredient;
+
+    const [{ isDragging }, drag] = useDrag({
+        item: { type: ItemTypes.INGREDIENT, ingredient },
+        collect: (monitor) => ({
+            isDragging: !!monitor.isDragging(),
+        }),
+    });
+
     return (
-        <div key={ingredient.id} className="cutting-board__product">
-            {ingredient.name}
-        </div>
+        <div
+            ref={drag}
+            className="ingredient"
+            style={{
+                backgroundImage: `url(${imgUrl})`,
+                opacity: isDragging ? 0.5 : 1,
+            }}
+        />
     );
 };
 

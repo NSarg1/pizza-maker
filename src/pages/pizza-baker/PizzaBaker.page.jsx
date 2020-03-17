@@ -1,6 +1,6 @@
 import React from 'react';
 import CuttingBoard from '../../components/cutting-board/CuttingBoard.component';
-import Pizza from '../../components/pizza/Pizza.component'
+import Pizza from '../../components/pizza/Pizza.component';
 
 const PizzaBaker = () => {
     return (
