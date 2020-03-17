@@ -1,11 +1,18 @@
 //RESET
-@import "./sass/reset";
+@import './sass/reset';
 //ABSTRACTS
-@import "./sass/abstracts/variables";
-@import "./sass/abstracts/mixins";
-@import "./sass/abstracts/animations";
+@import './sass/abstracts/variables';
+@import './sass/abstracts/mixins';
+@import './sass/abstracts/animations';
 //BASE
-@import "./sass/base/base";
-@import "./sass/base/reset";
-@import "./sass/base/typography";
-@import "./sass/base/utilities";
+@import './sass/base/base';
+@import './sass/base/reset';
+@import './sass/base/typography';
+@import './sass/base/utilities';
+
+//PAGES
+@import './pages/pizza-baker/pizza-baker.styles.scss';
+
+//COMPONENTS
+@import './components/cutting-board/cutting-board.styles.scss';
+@import './components/pizza/pizza.styles.scss';

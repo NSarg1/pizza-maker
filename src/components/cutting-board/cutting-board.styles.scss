@@ -1,0 +1,17 @@
+.cutting-board {
+    background: url(../../assets/cutting-board.png);
+    background-position: center;
+    background-size: cover;
+    height: 39rem;
+    width: 33rem;
+    justify-self: flex-end;
+    box-shadow: 1.1rem 0.5rem 5.6rem 0.5rem rgba(0, 0, 0, 0.75);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    &__product {
+        user-select: none;
+    }
+}
