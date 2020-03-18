@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/pizza-maker/static/css/main.5afd15c4.chunk.css",
-    "main.js": "/pizza-maker/static/js/main.7f1e5500.chunk.js",
-    "main.js.map": "/pizza-maker/static/js/main.7f1e5500.chunk.js.map",
+    "main.css": "/pizza-maker/static/css/main.3efe35bd.chunk.css",
+    "main.js": "/pizza-maker/static/js/main.e21bac25.chunk.js",
+    "main.js.map": "/pizza-maker/static/js/main.e21bac25.chunk.js.map",
     "runtime-main.js": "/pizza-maker/static/js/runtime-main.38aae517.js",
     "runtime-main.js.map": "/pizza-maker/static/js/runtime-main.38aae517.js.map",
     "static/js/2.acfab2a3.chunk.js": "/pizza-maker/static/js/2.acfab2a3.chunk.js",
     "static/js/2.acfab2a3.chunk.js.map": "/pizza-maker/static/js/2.acfab2a3.chunk.js.map",
     "index.html": "/pizza-maker/index.html",
-    "precache-manifest.a80a3d6e263b11aae75fce7455d00ce5.js": "/pizza-maker/precache-manifest.a80a3d6e263b11aae75fce7455d00ce5.js",
+    "precache-manifest.db956b09da97d5042d567020246fdc01.js": "/pizza-maker/precache-manifest.db956b09da97d5042d567020246fdc01.js",
     "service-worker.js": "/pizza-maker/service-worker.js",
-    "static/css/main.5afd15c4.chunk.css.map": "/pizza-maker/static/css/main.5afd15c4.chunk.css.map",
+    "static/css/main.3efe35bd.chunk.css.map": "/pizza-maker/static/css/main.3efe35bd.chunk.css.map",
     "static/js/2.acfab2a3.chunk.js.LICENSE.txt": "/pizza-maker/static/js/2.acfab2a3.chunk.js.LICENSE.txt",
-    "static/media/base.scss": "/pizza-maker/static/media/pizza.53b99974.png",
-    "static/media/greens.png": "/pizza-maker/static/media/greens.547b4971.png",
-    "static/media/mashrooms.png": "/pizza-maker/static/media/mashrooms.e3e28b26.png",
+    "static/media/base.scss": "/pizza-maker/static/media/pizza.87e1adf8.png",
+    "static/media/greens.png": "/pizza-maker/static/media/greens.cd50be91.png",
+    "static/media/mashrooms.png": "/pizza-maker/static/media/mashrooms.d6ff94b8.png",
     "static/media/olive.png": "/pizza-maker/static/media/olive.6c9efc12.png",
     "static/media/sausage.png": "/pizza-maker/static/media/sausage.dc174a6c.png",
-    "static/media/tomato.png": "/pizza-maker/static/media/tomato.513a9f2e.png"
+    "static/media/tomato.png": "/pizza-maker/static/media/tomato.6c56301b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.38aae517.js",
     "static/js/2.acfab2a3.chunk.js",
-    "static/css/main.5afd15c4.chunk.css",
-    "static/js/main.7f1e5500.chunk.js"
+    "static/css/main.3efe35bd.chunk.css",
+    "static/js/main.e21bac25.chunk.js"
   ]
 }
