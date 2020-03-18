@@ -10,10 +10,14 @@
 @import './sass/base/typography';
 @import './sass/base/utilities';
 
+// APP
+@import './App/App';
+
 //PAGES
-@import './pages/pizza-baker/pizza-baker.styles.scss';
+@import './pages/pizza-baker/pizza-baker.styles';
 
 //COMPONENTS
-@import './components/cutting-board/cutting-board.styles.scss';
-@import './components/pizza/pizza.styles.scss';
-@import './components/ingredient/ingredient.styles.scss';
+@import './components/cutting-board/cutting-board.styles';
+@import './components/pizza/pizza.styles';
+@import './components/ingredient/ingredient.styles';
+@import './components/price-list/price-list.styles';

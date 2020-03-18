@@ -1,0 +1,28 @@
+.price-list {
+    background-image: url(../../assets/1.png);
+    background-position: center;
+    background-size: cover;
+    height: 39rem;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+
+    &__title {
+        margin-bottom: 3.5rem;
+    }
+
+    &__content {
+        flex: 1;
+    }
+    &__item {
+        font-family: 'Handlee', cursive;
+        font-size: 1.8rem;
+        padding: 0.7rem 0;
+        border-bottom: 2px dashed rgb(121, 121, 121);
+        margin-bottom: 0.5rem;
+    }
+    &__total{
+        margin-top: 2rem;
+    }
+}
