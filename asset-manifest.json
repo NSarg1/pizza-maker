@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pizza-maker/static/css/main.4cabe284.chunk.css",
+    "main.css": "/pizza-maker/static/css/main.acef4ec8.chunk.css",
     "main.js": "/pizza-maker/static/js/main.3506e517.chunk.js",
     "main.js.map": "/pizza-maker/static/js/main.3506e517.chunk.js.map",
     "runtime-main.js": "/pizza-maker/static/js/runtime-main.38aae517.js",
@@ -8,11 +8,11 @@
     "static/js/2.3517cfcd.chunk.js": "/pizza-maker/static/js/2.3517cfcd.chunk.js",
     "static/js/2.3517cfcd.chunk.js.map": "/pizza-maker/static/js/2.3517cfcd.chunk.js.map",
     "index.html": "/pizza-maker/index.html",
-    "precache-manifest.9fc51819f227ef8342a1ceb2f06ae7b2.js": "/pizza-maker/precache-manifest.9fc51819f227ef8342a1ceb2f06ae7b2.js",
+    "precache-manifest.b31a0d000484a6cc0653342c68c0502b.js": "/pizza-maker/precache-manifest.b31a0d000484a6cc0653342c68c0502b.js",
     "service-worker.js": "/pizza-maker/service-worker.js",
-    "static/css/main.4cabe284.chunk.css.map": "/pizza-maker/static/css/main.4cabe284.chunk.css.map",
+    "static/css/main.acef4ec8.chunk.css.map": "/pizza-maker/static/css/main.acef4ec8.chunk.css.map",
     "static/js/2.3517cfcd.chunk.js.LICENSE.txt": "/pizza-maker/static/js/2.3517cfcd.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/pizza-maker/static/media/plate.cf93284e.png",
+    "static/media/index.scss": "/pizza-maker/static/media/plate.901abda1.png",
     "static/media/greens.png": "/pizza-maker/static/media/greens.cd50be91.png",
     "static/media/mashrooms.png": "/pizza-maker/static/media/mashrooms.d6ff94b8.png",
     "static/media/olive.png": "/pizza-maker/static/media/olive.6c9efc12.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.38aae517.js",
     "static/js/2.3517cfcd.chunk.js",
-    "static/css/main.4cabe284.chunk.css",
+    "static/css/main.acef4ec8.chunk.css",
     "static/js/main.3506e517.chunk.js"
   ]
 }
