@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/pizza-maker/static/css/main.be517d6e.chunk.css",
-    "main.js": "/pizza-maker/static/js/main.7dd3a743.chunk.js",
-    "main.js.map": "/pizza-maker/static/js/main.7dd3a743.chunk.js.map",
+    "main.js": "/pizza-maker/static/js/main.c1a65537.chunk.js",
+    "main.js.map": "/pizza-maker/static/js/main.c1a65537.chunk.js.map",
     "runtime-main.js": "/pizza-maker/static/js/runtime-main.38aae517.js",
     "runtime-main.js.map": "/pizza-maker/static/js/runtime-main.38aae517.js.map",
     "static/css/2.f42e59c9.chunk.css": "/pizza-maker/static/css/2.f42e59c9.chunk.css",
     "static/js/2.e6354da9.chunk.js": "/pizza-maker/static/js/2.e6354da9.chunk.js",
     "static/js/2.e6354da9.chunk.js.map": "/pizza-maker/static/js/2.e6354da9.chunk.js.map",
     "index.html": "/pizza-maker/index.html",
-    "precache-manifest.3cbfa7bbb72059820a1e203a1c728f47.js": "/pizza-maker/precache-manifest.3cbfa7bbb72059820a1e203a1c728f47.js",
+    "precache-manifest.6f4d25b71873a937276d4393a4edd22b.js": "/pizza-maker/precache-manifest.6f4d25b71873a937276d4393a4edd22b.js",
     "service-worker.js": "/pizza-maker/service-worker.js",
     "static/css/2.f42e59c9.chunk.css.map": "/pizza-maker/static/css/2.f42e59c9.chunk.css.map",
     "static/css/main.be517d6e.chunk.css.map": "/pizza-maker/static/css/main.be517d6e.chunk.css.map",
@@ -26,6 +26,6 @@
     "static/css/2.f42e59c9.chunk.css",
     "static/js/2.e6354da9.chunk.js",
     "static/css/main.be517d6e.chunk.css",
-    "static/js/main.7dd3a743.chunk.js"
+    "static/js/main.c1a65537.chunk.js"
   ]
 }
