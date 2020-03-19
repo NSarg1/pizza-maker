@@ -2,6 +2,8 @@ import React from 'react';
 import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
 
+import { toast } from 'react-toastify';
+
 import {
     selectIngredients,
     selectSelectedBaseSize,
@@ -16,10 +18,15 @@ import Button from '../button/Button.component';
 const PriceList = (props) => {
     const { ingredients, selectedBaseSize, totalOrder, savePizzaSample, resetAllIngredients } = props;
 
-    console.log(totalOrder);
     const handleOrderClick = () => {
-        savePizzaSample(totalOrder);
-        resetAllIngredients();
+        if (totalOrder.reduce((acc, elm) => acc + elm.quantity, 0) < 2) {
+            toast.error('You must choose at least one ingredient');
+            return;
+        } else {
+            savePizzaSample(totalOrder);
+            resetAllIngredients();
+            toast('You have placed order successfully. Bon appetit');
+        }
     };
 
     return (
@@ -52,7 +59,7 @@ const PriceList = (props) => {
                     </div>
 
                     <Button className="ns-btn--order-submit" onClick={handleOrderClick}>
-                        Submit order
+                        <span className="ns-btn__text"> Submit order</span>
                     </Button>
                 </li>
             </ul>

@@ -6,8 +6,12 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 
     .main {
         flex: 1 1 auto;
+        & > div {
+            animation: dynamicAppearance 1s ease-out forwards;
+        }
     }
 }

@@ -13,13 +13,25 @@ import {
 import { ItemTypes } from '../../react-dnd/ItemTypes';
 
 //ACTIONS
-import { addIngredient, setPizzaBaseSize } from '../../redux/ingredient/ingredient.actions';
+import {
+    addIngredient,
+    setPizzaBaseSize,
+    resetAllIngredients,
+} from '../../redux/ingredient/ingredient.actions';
 
 //COMPONENTS
 import Button from '../button/Button.component';
 import AddingIngredient from '../adding-ingredient/AddingIngredient.component';
 
-const Pizza = ({ ingredients, baseSize, selectedBaseSize, addIngredient, setPizzaBaseSize }) => {
+const Pizza = (props) => {
+    const {
+        ingredients,
+        baseSize,
+        selectedBaseSize,
+        addIngredient,
+        setPizzaBaseSize,
+        resetAllIngredients,
+    } = props;
     const [state, setState] = useState();
     const [, drop] = useDrop({
         accept: ItemTypes.INGREDIENT,
@@ -31,10 +43,14 @@ const Pizza = ({ ingredients, baseSize, selectedBaseSize, addIngredient, setPizz
         addIngredient(ingredient);
     }
 
-    console.log(state);
     return (
         <div className="pizza" ref={drop} style={{ transform: `scale(${selectedBaseSize.size})` }}>
             <AddingIngredient state={state} setState={setState} />
+            <div className="u-flex-center-2">
+                <Button className="ns-btn-pizza" onClick={resetAllIngredients}>
+                    <span className="ns-btn__text pizza__btn-text">RESET PIZZA</span>
+                </Button>
+            </div>
             <div className="pizza__main">
                 {ingredients.map((item) => {
                     if (item.quantity && item.portionImg) {
@@ -56,7 +72,7 @@ const Pizza = ({ ingredients, baseSize, selectedBaseSize, addIngredient, setPizz
 
                     return (
                         <Button key={base.id} className={classes} onClick={setPizzaBaseSize.bind(this, base)}>
-                            <span className="pizza__btn-text">{base.name}</span>
+                            <span className="ns-btn__text pizza__btn-text">{base.name}</span>
                         </Button>
                     );
                 })}
@@ -74,6 +90,7 @@ const mapStateToProps = createStructuredSelector({
 const mapDispatchToProps = (dispatch) => ({
     addIngredient: (ingredient) => dispatch(addIngredient(ingredient)),
     setPizzaBaseSize: (base) => dispatch(setPizzaBaseSize(base)),
+    resetAllIngredients: () => dispatch(resetAllIngredients()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Pizza);

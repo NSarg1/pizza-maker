@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { toast } from 'react-toastify';
+
 import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
 
@@ -8,11 +11,11 @@ import { clearPizzaHistory } from '../../redux/prev-orders/prev-orders.actions';
 
 import Button from '../../components/button/Button.component';
 
-const OrderedPizzas = ({ prevOrders, clearPizzaHistory }) => {
-    console.log(prevOrders);
+import { Image } from './ordered-pizzas.styled';
 
+const OrderedPizzas = ({ prevOrders, clearPizzaHistory }) => {
     const handleOrderClick = () => {
-        alert('You have ordered succesfully. Bon apety.');
+        toast('You have placed order successfully. Bon appetit');
     };
 
     return (
@@ -21,7 +24,7 @@ const OrderedPizzas = ({ prevOrders, clearPizzaHistory }) => {
                 <>
                     <div className="ordered-pizzas__top">
                         <Button className="ns-btn-pizza" onClick={clearPizzaHistory}>
-                            <span className="pizza__btn-text">Clear history</span>
+                            <span className="ns-btn__text pizza__btn-text">Clear history</span>
                         </Button>
                     </div>
                     <div className="ordered-pizzas__bottom">
@@ -31,17 +34,16 @@ const OrderedPizzas = ({ prevOrders, clearPizzaHistory }) => {
                                     <div>
                                         {order.map((ing) => {
                                             return ing.type === 'base' ? (
-                                                <div>
-                                                    <div key={ing.id} className="ordered-pizzas__item-title">
+                                                <div key={ing.id}>
+                                                    <div className="ordered-pizzas__item-title">
                                                         <span>BASE: {ing.name}</span>
                                                     </div>
-                                                    <div className="u-flex-center">INGREDIENTS</div>
                                                 </div>
                                             ) : (
                                                 <div key={ing.id} className="ordered-pizzas__item">
-                                                    <span>
-                                                        {ing.name.toUpperCase()}: x{ing.quantity}
-                                                    </span>
+                                                    <div className="u-flex-between">
+                                                        <Image img={ing.pieceImg} />: x{ing.quantity}
+                                                    </div>
                                                 </div>
                                             );
                                         })}

@@ -17,9 +17,6 @@
     }
 
     &__btn-text {
-        transition: 0.4s;
-        position: relative;
-        z-index: 100;
         @include colorGradient($color-gradient-1);
     }
 
@@ -37,7 +34,6 @@
         justify-content: space-evenly;
     }
 
-   
     &__ingredient {
         @include absoluteCenter;
         height: 100%;

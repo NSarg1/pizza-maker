@@ -1,8 +1,9 @@
 import React from 'react';
+import Notification from '../components/notification/Notification';
 
 //PAGES
 import PizzaBaker from '../pages/pizza-baker/PizzaBaker.page';
-import OrderedPizzas from '../pages/ordered-pizzas/OrderedPizzas.page'
+import OrderedPizzas from '../pages/ordered-pizzas/OrderedPizzas.page';
 //LAYOUT
 import Header from '../layout/header/Header.layout';
 import { Switch, Route } from 'react-router-dom';
@@ -17,6 +18,7 @@ function App() {
                     <Route exact path="/ordered-pizzas" component={OrderedPizzas} />
                 </Switch>
             </main>
+            <Notification />
         </div>
     );
 }
