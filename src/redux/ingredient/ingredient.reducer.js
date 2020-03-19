@@ -3,11 +3,11 @@ import { changeIngredientsCount, selectBaseSize } from './ingredient.utils';
 
 import { pizzaIngredients, pizzaBaseSizes } from './data';
 
-const { ADD_INGREDIENT, CHANGE_BASE_SIZE } = IngredientTypes;
+const { ADD_INGREDIENT, CHANGE_BASE_SIZE , RESET_BASE_AND_INGREDIENTS} = IngredientTypes;
 
 const INITIAL_STATE = {
     ingredients: pizzaIngredients,
-    baseSize: pizzaBaseSizes,
+    baseSizes: pizzaBaseSizes,
 };
 
 const ingredientReducer = (state = INITIAL_STATE, action) => {
@@ -20,7 +20,13 @@ const ingredientReducer = (state = INITIAL_STATE, action) => {
         case CHANGE_BASE_SIZE:
             return {
                 ...state,
-                baseSize: selectBaseSize(state.baseSize, action.payload),
+                baseSizes: selectBaseSize(state.baseSizes, action.payload),
+            };
+        case RESET_BASE_AND_INGREDIENTS:
+            return {
+                ...state,
+                ingredients: pizzaIngredients,
+                baseSizes: pizzaBaseSizes,
             };
         default:
             return state;

@@ -1,0 +1,68 @@
+.ns-btn {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.1s;
+    border-radius: $border-radius-5;
+    font-size: 1.6rem;
+    flex-shrink: 0;
+
+    &-pizza {
+        font-size: 2rem;
+        padding: 1rem 1.5rem;
+        border: 1px solid rgb(37, 37, 37);
+        background-color: rgba(0, 0, 0, 0.4);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            background-image: linear-gradient(80deg, #ffc013 0%, #e46f34 50%, transparent 50%);
+            transition: 0.4s;
+        }
+
+        &:hover::before,
+        &--active::before {
+            width: 220%;
+        }
+
+        &:hover,
+        &--active {
+            .pizza__btn-text {
+                color: rgb(75, 75, 75);
+            }
+        }
+    }
+
+    
+
+    &--order-submit {
+        font-weight: bold;
+        border-bottom: 1px transparent;
+        padding-bottom: 0.5rem;
+        border-radius: 0;
+        transition: 0.4s;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 0.1rem;
+            width: 0%;
+            background-image: linear-gradient(to right, #ffc013 0%, #e46f34 100%);
+            transition: 0.4s;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+        &:active::after {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

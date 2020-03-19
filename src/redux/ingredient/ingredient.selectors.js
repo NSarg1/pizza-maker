@@ -7,8 +7,13 @@ export const selectIngredients = createSelector(
     (ingredients) => ingredients.ingredients
 );
 
-export const selectBaseSize = createSelector([selectIngredientsStore], (ingredients) => ingredients.baseSize);
+export const selectBaseSize = createSelector([selectIngredientsStore], (ingredients) => ingredients.baseSizes);
 
 export const selectSelectedBaseSize = createSelector([selectBaseSize], (baseSizes) =>
     baseSizes.find((elm) => elm.selected === true)
+);
+
+export const selectTotalOrder = createSelector(
+    [selectIngredients, selectSelectedBaseSize],
+    (ingredients, baseSize) => [{ ...baseSize }, ...ingredients]
 );

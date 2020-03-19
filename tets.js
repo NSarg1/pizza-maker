@@ -49,6 +49,6 @@ const pizzaBaseSizes = [
 
 console.log(
     pizzaIngredients.reduce((acc, curr) => {
-        return acc + curr.quantity;
+        return acc + curr.quantity * ;
     }, 0)
 );

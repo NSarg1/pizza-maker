@@ -1,0 +1,83 @@
+.ordered-pizzas {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &__empty-message {
+        height: 100%;
+        @include flexCenter;
+        font-size: 4.5rem;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &__top {
+        @include flexCenter;
+    }
+
+    &__bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__collection {
+        position: relative;
+        flex-shrink: 0;
+        @include flexColumnCenter;
+        border-radius: 50%;
+        margin: 2rem;
+        padding: 3.5rem;
+        height: 25rem;
+        width: 25rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+
+        .order-again {
+            transition: 0.5s;
+            @include absoluteCenter;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 100;
+            background-color: rgba(255, 255, 255, 0.65);
+            border-radius: $border-radius-5;
+            &__btn {
+                padding: 1rem 2rem;
+                font-size: 2.2rem;
+            }
+        }
+
+        &::after {
+            content: '';
+            @include absoluteCenter;
+            border-radius: 50%;
+            height: 0;
+            width: 0;
+            @include bgImageCenter-2(
+                '../../assets/pizza/pizza-baked.png',
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+            );
+            transition: 0.6s;
+        }
+
+        &:hover {
+            .order-again {
+                opacity: 1;
+                visibility: visible;
+            }
+            &::after {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.3rem;
+    }
+    &__item-title {
+        @include flexColumnCenter;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+}

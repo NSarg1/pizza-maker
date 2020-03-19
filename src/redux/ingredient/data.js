@@ -52,7 +52,34 @@ export const pizzaIngredients = [
 ];
 
 export const pizzaBaseSizes = [
-    { id: 'base-1', name: 'SMALL', size: 0.9, weight: 0.2, price: 1, type: 'base', selected: false },
-    { id: 'base-2', name: 'MEDIUM', size: 1, weight: 0.4, price: 2, type: 'base', selected: true },
-    { id: 'base-3', name: 'BIG', size: 1.1, weight: 0.6, price: 3, type: 'base', selected: false },
+    {
+        id: 'base-1',
+        name: 'SMALL',
+        size: 0.9,
+        weight: 0.2,
+        price: 1,
+        type: 'base',
+        selected: false,
+        quantity: 1,
+    },
+    {
+        id: 'base-2',
+        name: 'MEDIUM',
+        size: 1,
+        weight: 0.4,
+        price: 2,
+        type: 'base',
+        selected: true,
+        quantity: 1,
+    },
+    {
+        id: 'base-3',
+        name: 'BIG',
+        size: 1.1,
+        weight: 0.6,
+        price: 3,
+        type: 'base',
+        selected: false,
+        quantity: 1,
+    },
 ];

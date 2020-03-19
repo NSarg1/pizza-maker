@@ -8,3 +8,8 @@
 .u-margin-bottom-1 {
 	margin-bottom: 1.5rem;
 }
+
+
+.u-flex-center{
+	@include flexCenter;
+}

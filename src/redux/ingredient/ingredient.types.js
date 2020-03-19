@@ -1,6 +1,7 @@
 const IngredientTypes = {
     ADD_INGREDIENT: 'ADD_INGREDIENT',
     CHANGE_BASE_SIZE: 'CHANGE_BASE_SIZE',
+    RESET_BASE_AND_INGREDIENTS: 'RESET_BASE_AND_INGREDIENTS',
 };
 
 export default IngredientTypes;

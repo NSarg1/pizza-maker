@@ -1,26 +1,36 @@
 @keyframes slideDown {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes dynamicAppearance {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes dynamicDisappearance {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        transform: scale(2) translate(-28%, -40%);
+        opacity: 0;
+    }
 }

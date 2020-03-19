@@ -1,5 +1,5 @@
 //RESET
-@import './sass/reset';
+@import './sass/reset.css';
 //ABSTRACTS
 @import './sass/abstracts/variables';
 @import './sass/abstracts/mixins';
@@ -10,14 +10,20 @@
 @import './sass/base/typography';
 @import './sass/base/utilities';
 
-// APP
-@import './App/App';
-
-//PAGES
-@import './pages/pizza-baker/pizza-baker.styles';
-
-//COMPONENTS
+// COMPONENTS
+@import './components/button/button';
 @import './components/cutting-board/cutting-board.styles';
 @import './components/pizza/pizza.styles';
 @import './components/ingredient/ingredient.styles';
 @import './components/price-list/price-list.styles';
+@import './components/adding-ingredient/adding-ingredient.styles.scss';
+
+//PAGES
+@import './pages/pizza-baker/pizza-baker.styles';
+@import './pages/ordered-pizzas/ordered-pizzas.styles';
+
+//Layout
+@import './layout/header/header.styles';
+
+// APP
+@import './App/App';

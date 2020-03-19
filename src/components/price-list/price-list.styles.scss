@@ -16,13 +16,21 @@
         flex: 1;
     }
     &__item {
-        font-family: 'Handlee', cursive;
+        // font-family: 'Handlee', cursive;
+        font-family: 'Mali', cursive;
+        font-weight: 300;
         font-size: 1.8rem;
         padding: 0.7rem 0;
         border-bottom: 2px dashed rgb(121, 121, 121);
         margin-bottom: 0.5rem;
+        span{
+            font-weight: bold;
+        }
     }
-    &__total{
+    &__total {
+        font-size: 1.8rem;
         margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
     }
 }

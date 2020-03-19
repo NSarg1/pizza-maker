@@ -6,7 +6,7 @@ import PriceList from '../../components/price-list/PriceList.component';
 const PizzaBaker = () => {
     return (
         <div className="pizza-baker">
-            <h1 className="pizza-baker__title">You make, we bake</h1>
+            {/* <h1 className="pizza-baker__title">You make, we bake</h1> */}
             <div className="pizza-baker__container">
                 <div className="pizza-baker__main">
                     <Pizza />

@@ -1,5 +1,5 @@
 // LIBRAARIES
-import React from 'react';
+import React, { useState } from 'react';
 import { useDrop } from 'react-dnd';
 import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
@@ -15,23 +15,26 @@ import { ItemTypes } from '../../react-dnd/ItemTypes';
 //ACTIONS
 import { addIngredient, setPizzaBaseSize } from '../../redux/ingredient/ingredient.actions';
 
+//COMPONENTS
+import Button from '../button/Button.component';
+import AddingIngredient from '../adding-ingredient/AddingIngredient.component';
+
 const Pizza = ({ ingredients, baseSize, selectedBaseSize, addIngredient, setPizzaBaseSize }) => {
+    const [state, setState] = useState();
     const [, drop] = useDrop({
         accept: ItemTypes.INGREDIENT,
         drop: ({ ingredient }) => handleDrop(ingredient),
     });
 
     function handleDrop(ingredient) {
+        setState(ingredient);
         addIngredient(ingredient);
     }
 
+    console.log(state);
     return (
-        <div
-            className="pizza"
-            ref={drop}
-            style={{
-                transform: `scale(${selectedBaseSize.size})`,
-            }}>
+        <div className="pizza" ref={drop} style={{ transform: `scale(${selectedBaseSize.size})` }}>
+            <AddingIngredient state={state} setState={setState} />
             <div className="pizza__main">
                 {ingredients.map((item) => {
                     if (item.quantity && item.portionImg) {
@@ -49,14 +52,12 @@ const Pizza = ({ ingredients, baseSize, selectedBaseSize, addIngredient, setPizz
             </div>
             <div className="pizza__size">
                 {baseSize.map((base) => {
-                    const classes = base.selected
-                        ? 'pizza__size-box pizza__size-box--active'
-                        : 'pizza__size-box';
+                    const classes = base.selected ? 'ns-btn-pizza ns-btn-pizza--active' : 'ns-btn-pizza';
 
                     return (
-                        <div key={base.id} className={classes} onClick={setPizzaBaseSize.bind(this, base)}>
-                            <span className="pizza__size-name">{base.name}</span>
-                        </div>
+                        <Button key={base.id} className={classes} onClick={setPizzaBaseSize.bind(this, base)}>
+                            <span className="pizza__btn-text">{base.name}</span>
+                        </Button>
                     );
                 })}
             </div>
