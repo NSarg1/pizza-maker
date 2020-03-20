@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/pizza-maker/static/css/main.90eb8e92.chunk.css",
-    "main.js": "/pizza-maker/static/js/main.e672cb2b.chunk.js",
-    "main.js.map": "/pizza-maker/static/js/main.e672cb2b.chunk.js.map",
+    "main.css": "/pizza-maker/static/css/main.1772e9ed.chunk.css",
+    "main.js": "/pizza-maker/static/js/main.c45eeeaf.chunk.js",
+    "main.js.map": "/pizza-maker/static/js/main.c45eeeaf.chunk.js.map",
     "runtime-main.js": "/pizza-maker/static/js/runtime-main.38aae517.js",
     "runtime-main.js.map": "/pizza-maker/static/js/runtime-main.38aae517.js.map",
     "static/css/2.f42e59c9.chunk.css": "/pizza-maker/static/css/2.f42e59c9.chunk.css",
-    "static/js/2.e6354da9.chunk.js": "/pizza-maker/static/js/2.e6354da9.chunk.js",
-    "static/js/2.e6354da9.chunk.js.map": "/pizza-maker/static/js/2.e6354da9.chunk.js.map",
+    "static/js/2.95edd817.chunk.js": "/pizza-maker/static/js/2.95edd817.chunk.js",
+    "static/js/2.95edd817.chunk.js.map": "/pizza-maker/static/js/2.95edd817.chunk.js.map",
     "index.html": "/pizza-maker/index.html",
-    "precache-manifest.6cda8195da8b25a1d315fe5c24786806.js": "/pizza-maker/precache-manifest.6cda8195da8b25a1d315fe5c24786806.js",
+    "precache-manifest.0ca855c25fa055298b6edc5a63b18179.js": "/pizza-maker/precache-manifest.0ca855c25fa055298b6edc5a63b18179.js",
     "service-worker.js": "/pizza-maker/service-worker.js",
     "static/css/2.f42e59c9.chunk.css.map": "/pizza-maker/static/css/2.f42e59c9.chunk.css.map",
-    "static/css/main.90eb8e92.chunk.css.map": "/pizza-maker/static/css/main.90eb8e92.chunk.css.map",
-    "static/js/2.e6354da9.chunk.js.LICENSE.txt": "/pizza-maker/static/js/2.e6354da9.chunk.js.LICENSE.txt",
+    "static/css/main.1772e9ed.chunk.css.map": "/pizza-maker/static/css/main.1772e9ed.chunk.css.map",
+    "static/js/2.95edd817.chunk.js.LICENSE.txt": "/pizza-maker/static/js/2.95edd817.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/pizza-maker/static/media/plate.901abda1.png",
     "static/media/greens.png": "/pizza-maker/static/media/greens.d7ad8a44.png",
     "static/media/mashrooms.png": "/pizza-maker/static/media/mashrooms.e4d5b431.png",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.38aae517.js",
     "static/css/2.f42e59c9.chunk.css",
-    "static/js/2.e6354da9.chunk.js",
-    "static/css/main.90eb8e92.chunk.css",
-    "static/js/main.e672cb2b.chunk.js"
+    "static/js/2.95edd817.chunk.js",
+    "static/css/main.1772e9ed.chunk.css",
+    "static/js/main.c45eeeaf.chunk.js"
   ]
 }

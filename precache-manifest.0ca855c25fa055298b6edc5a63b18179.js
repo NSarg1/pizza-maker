@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cd63cab1076b6efd8e612151299e9017",
+    "revision": "577b1562e231f15e167bfe9e3bc46e23",
     "url": "/pizza-maker/index.html"
   },
   {
-    "revision": "2c47d101f6f0c49e4439",
+    "revision": "aec43230d6a3b52f681d",
     "url": "/pizza-maker/static/css/2.f42e59c9.chunk.css"
   },
   {
-    "revision": "c5b53c77edbc306bd6ed",
-    "url": "/pizza-maker/static/css/main.90eb8e92.chunk.css"
+    "revision": "03bd616146141faf8124",
+    "url": "/pizza-maker/static/css/main.1772e9ed.chunk.css"
   },
   {
-    "revision": "2c47d101f6f0c49e4439",
-    "url": "/pizza-maker/static/js/2.e6354da9.chunk.js"
+    "revision": "aec43230d6a3b52f681d",
+    "url": "/pizza-maker/static/js/2.95edd817.chunk.js"
   },
   {
-    "revision": "eff3b4d7e4bb0087ce53139cd90bc880",
-    "url": "/pizza-maker/static/js/2.e6354da9.chunk.js.LICENSE.txt"
+    "revision": "176c1a1a28b19c611d9701905d8d60b7",
+    "url": "/pizza-maker/static/js/2.95edd817.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c5b53c77edbc306bd6ed",
-    "url": "/pizza-maker/static/js/main.e672cb2b.chunk.js"
+    "revision": "03bd616146141faf8124",
+    "url": "/pizza-maker/static/js/main.c45eeeaf.chunk.js"
   },
   {
     "revision": "77803edc2dd16140d722",
