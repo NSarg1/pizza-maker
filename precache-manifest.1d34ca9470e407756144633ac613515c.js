@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "577b1562e231f15e167bfe9e3bc46e23",
+    "revision": "a3279488220780cba4605671eeb89695",
     "url": "/pizza-maker/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pizza-maker/static/css/2.f42e59c9.chunk.css"
   },
   {
-    "revision": "03bd616146141faf8124",
-    "url": "/pizza-maker/static/css/main.1772e9ed.chunk.css"
+    "revision": "4eb6bb509b7e16613491",
+    "url": "/pizza-maker/static/css/main.3c09732b.chunk.css"
   },
   {
     "revision": "aec43230d6a3b52f681d",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pizza-maker/static/js/2.95edd817.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "03bd616146141faf8124",
-    "url": "/pizza-maker/static/js/main.c45eeeaf.chunk.js"
+    "revision": "4eb6bb509b7e16613491",
+    "url": "/pizza-maker/static/js/main.287e67fe.chunk.js"
   },
   {
     "revision": "77803edc2dd16140d722",

@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/pizza-maker/static/css/main.1772e9ed.chunk.css",
-    "main.js": "/pizza-maker/static/js/main.c45eeeaf.chunk.js",
-    "main.js.map": "/pizza-maker/static/js/main.c45eeeaf.chunk.js.map",
+    "main.css": "/pizza-maker/static/css/main.3c09732b.chunk.css",
+    "main.js": "/pizza-maker/static/js/main.287e67fe.chunk.js",
+    "main.js.map": "/pizza-maker/static/js/main.287e67fe.chunk.js.map",
     "runtime-main.js": "/pizza-maker/static/js/runtime-main.38aae517.js",
     "runtime-main.js.map": "/pizza-maker/static/js/runtime-main.38aae517.js.map",
     "static/css/2.f42e59c9.chunk.css": "/pizza-maker/static/css/2.f42e59c9.chunk.css",
     "static/js/2.95edd817.chunk.js": "/pizza-maker/static/js/2.95edd817.chunk.js",
     "static/js/2.95edd817.chunk.js.map": "/pizza-maker/static/js/2.95edd817.chunk.js.map",
     "index.html": "/pizza-maker/index.html",
-    "precache-manifest.0ca855c25fa055298b6edc5a63b18179.js": "/pizza-maker/precache-manifest.0ca855c25fa055298b6edc5a63b18179.js",
+    "precache-manifest.1d34ca9470e407756144633ac613515c.js": "/pizza-maker/precache-manifest.1d34ca9470e407756144633ac613515c.js",
     "service-worker.js": "/pizza-maker/service-worker.js",
     "static/css/2.f42e59c9.chunk.css.map": "/pizza-maker/static/css/2.f42e59c9.chunk.css.map",
-    "static/css/main.1772e9ed.chunk.css.map": "/pizza-maker/static/css/main.1772e9ed.chunk.css.map",
+    "static/css/main.3c09732b.chunk.css.map": "/pizza-maker/static/css/main.3c09732b.chunk.css.map",
     "static/js/2.95edd817.chunk.js.LICENSE.txt": "/pizza-maker/static/js/2.95edd817.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/pizza-maker/static/media/plate.901abda1.png",
     "static/media/greens.png": "/pizza-maker/static/media/greens.d7ad8a44.png",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.38aae517.js",
     "static/css/2.f42e59c9.chunk.css",
     "static/js/2.95edd817.chunk.js",
-    "static/css/main.1772e9ed.chunk.css",
-    "static/js/main.c45eeeaf.chunk.js"
+    "static/css/main.3c09732b.chunk.css",
+    "static/js/main.287e67fe.chunk.js"
   ]
 }
