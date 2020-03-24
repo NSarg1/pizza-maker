@@ -22,7 +22,7 @@ const OrderedPizzas = ({ prevOrders, clearPizzaHistory }) => {
         <div className="ordered-pizzas">
             {prevOrders.length ? (
                 <>
-                    <div className="ordered-pizzas__top">
+                    <div className="u-flex-center-2">
                         <Button className="ns-btn-pizza" onClick={clearPizzaHistory}>
                             <span className="ns-btn__text pizza__btn-text">Clear history</span>
                         </Button>

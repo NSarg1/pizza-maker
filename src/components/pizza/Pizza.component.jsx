@@ -24,14 +24,7 @@ import Button from '../button/Button.component';
 import AddingIngredient from '../adding-ingredient/AddingIngredient.component';
 
 const Pizza = (props) => {
-    const {
-        ingredients,
-        baseSize,
-        selectedBaseSize,
-        addIngredient,
-        setPizzaBaseSize,
-        resetAllIngredients,
-    } = props;
+    const { ingredients, baseSize, selectedBaseSize, addIngredient, setPizzaBaseSize } = props;
     const [state, setState] = useState();
     const [, drop] = useDrop({
         accept: ItemTypes.INGREDIENT,
@@ -44,14 +37,9 @@ const Pizza = (props) => {
     }
 
     return (
-        <div className="pizza" ref={drop} style={{ transform: `scale(${selectedBaseSize.size})` }}>
-            <AddingIngredient state={state} setState={setState} />
-            <div className="u-flex-center-2">
-                <Button className="ns-btn-pizza" onClick={resetAllIngredients}>
-                    <span className="ns-btn__text pizza__btn-text">RESET PIZZA</span>
-                </Button>
-            </div>
-            <div className="pizza__main">
+        <div className="pizza" ref={drop}>
+            <div className="pizza__main" style={{ transform: `scale(${selectedBaseSize.size})` }}>
+                <AddingIngredient state={state} setState={setState} />
                 {ingredients.map((item) => {
                     if (item.quantity && item.portionImg) {
                         return (
@@ -66,10 +54,10 @@ const Pizza = (props) => {
                     }
                 })}
             </div>
-            <div className="pizza__size">
+
+            <div className="pizza__size u-flex-center-3">
                 {baseSize.map((base) => {
                     const classes = base.selected ? 'ns-btn-pizza ns-btn-pizza--active' : 'ns-btn-pizza';
-
                     return (
                         <Button key={base.id} className={classes} onClick={setPizzaBaseSize.bind(this, base)}>
                             <span className="ns-btn__text pizza__btn-text">{base.name}</span>
